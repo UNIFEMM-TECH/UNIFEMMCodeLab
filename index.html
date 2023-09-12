@@ -2,16 +2,85 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UNIFEMM-TECH</title>
-    <link rel="stylesheet" href="estilos/style.css">
+    <title>UNIFEMMCodeLab</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        nav {
+            background-color: #444;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .program-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .program-list li {
+            margin: 10px 0;
+        }
+    </style>
 </head>
 <body>
-  <main>
-        <header>
-            <h1>UNIFEMMCodeLab</h1>
-        </header>
-  </main>  
+    <header>
+        <h1>UNIFEMMCodeLab</h1>
+        <p>Programas desenvolvidos no curso de Análise e Desenvolvimento de Sistemas da Faculdade UNIFEMM</p>
+    </header>
+    <nav>
+        <a href="#programas">Programas</a>
+        <a href="#contato">Contato</a>
+    </nav>
+    <div class="container">
+        <section id="programas">
+            <h2>Programas Desenvolvidos</h2>
+            <ul class="program-list">
+                <li><a href="link_programa_1.html">Programa 1</a></li>
+                <li><a href="link_programa_2.html">Programa 2</a></li>
+                <li><a href="link_programa_3.html">Programa 3</a></li>
+                <!-- Adicione mais programas conforme necessário -->
+            </ul>
+        </section>
+        <section id="contato">
+            <h2>Contato</h2>
+            <p>Entre em contato conosco em <a href="mailto:uni-tech@unifemm.edu.br">uni-tech@unifemm.edu.br</a></p>
+        </section>
+    </div>
 </body>
 </html>
