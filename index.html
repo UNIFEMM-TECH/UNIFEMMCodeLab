@@ -17,12 +17,19 @@
             color: #fff;
             text-align: center;
             padding: 20px;
-            display: flex; /* Usar flexbox para alinhar elementos horizontalmente */
-            align-items: center; /* Alinhar verticalmente no centro */
+            display: flex;
+            justify-content: space-between; /* Alinhe as imagens à esquerda e à direita */
+            align-items: center;
         }
 
         h1 {
             text-align: center;
+            margin: 0;
+        }
+
+        .logo1,
+        .logo2 {
+            max-width: 200px;
         }
 
         nav {
@@ -45,7 +52,7 @@
         .container {
             max-width: 800px;
             margin: 20px auto;
-            padding: 20px; 
+            padding: 20px;
             background-color: #fff;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
@@ -58,21 +65,13 @@
         .program-list li {
             margin: 10px 0;
         }
-
-        /* Estilo para a imagem */
-        .logo {
-            max-width: 200px; /* Ajuste o tamanho máximo da imagem conforme necessário */
-            margin-right: 325px; /* Espaço à direita da imagem */
-            
-        }
     </style>
 </head>
 <body>
     <header>
-        <img class="logo" src="imagens/logo-03.png" alt="Logo UNIFEMMCodeLab">
-        <h1><center>UNIFEMMCodeLab</center></h1>
-       
-        
+        <img class="logo1" src="imagens/logo-03.png" alt="Logo UNIFEMMCodeLab">
+        <h1>UNIFEMMCodeLab</h1>
+        <img class="logo2" src="imagens/logo-03.png" alt="Logo UNIFEMMCodeLab">
     </header>
     <nav>
         <a href="https://www.unifemm.edu.br/">UNIFEMM</a>
@@ -96,7 +95,7 @@
             <h2>Contato</h2>
             <p>Entre em contato conosco em <a href="mailto:uni-tech@unifemm.edu.br">uni-tech@unifemm.edu.br</a></p>
             <h2>Unidade</h2>
-            <p>Av. Marechal Castelo Branco,número 2765 Santo Antônio – Sete Lagoas - MG</p>
+            <p>Av. Marechal Castelo Branco, número 2765 Santo Antônio – Sete Lagoas - MG</p>
         </section>
     </div>
     <p><center>© Todos os Direitos Reservados. UNIFEMM 2023</center></p>
