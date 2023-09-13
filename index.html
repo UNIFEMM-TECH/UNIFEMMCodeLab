@@ -17,10 +17,12 @@
             color: #fff;
             text-align: center;
             padding: 20px;
+            display: flex; /* Usar flexbox para alinhar elementos horizontalmente */
+            align-items: center; /* Alinhar verticalmente no centro */
         }
 
         h1 {
-            margin: 0;
+            text-align: center;
         }
 
         nav {
@@ -56,19 +58,32 @@
         .program-list li {
             margin: 10px 0;
         }
+
+        /* Estilo para a imagem */
+        .logo {
+            max-width: 200px; /* Ajuste o tamanho máximo da imagem conforme necessário */
+            margin-right: 325px; /* Espaço à direita da imagem */
+            
+        }
     </style>
 </head>
 <body>
     <header>
+        <img class="logo" src="C:\Users\Cliente\Documents\GitHub\UNIFEMMCodeLab\imagens\logo-03.png" alt="Logo UNIFEMMCodeLab">
         <h1>UNIFEMMCodeLab</h1>
-        <p>Programas desenvolvidos no curso de Análise e Desenvolvimento de Sistemas da Faculdade UNIFEMM</p>
+       
+        
     </header>
     <nav>
+        <a href="https://www.unifemm.edu.br/">UNIFEMM</a>
         <a href="#programas">Programas</a>
         <a href="#contato">Contato</a>
+        <a href="Colaboradores">Colaboradores</a>
+        <a href="Sobre nós">Sobre nós</a>
     </nav>
     <div class="container">
         <section id="programas">
+            <p>Programas desenvolvidos no curso de Análise e Desenvolvimento de Sistemas da Faculdade UNIFEMM</p>
             <h2>Programas Desenvolvidos</h2>
             <ul class="program-list">
                 <li><a href="link_programa_1.html">Programa 1</a></li>
