@@ -5,6 +5,16 @@ body {
     background-color: #f4f4f4;
 }
 
+embed {
+    width: 1000px;
+    height: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block; /* Isso é importante para que as margens funcionem corretamente */
+    max-width: 100%; /* Evita que o elemento ultrapasse a largura máxima da página */
+}
+
+
 header {
    /* background-image: url('imagens/js_.gif');*/
     background-color: #333;
