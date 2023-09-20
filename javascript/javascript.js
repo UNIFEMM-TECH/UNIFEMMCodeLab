@@ -1,3 +1,13 @@
+        const elementosConteudo = document.querySelectorAll('.container section');
+            elementosConteudo.forEach(elemento => {
+                elemento.style.display = 'none';
+            });
+
+        const elemento = document.getElementById('inicio');
+            if (elemento) {
+                elemento.style.display = 'block';
+            }
+        
         // Função para mostrar uma seção e armazenar o ID no localStorage
         function mostrarConteudo(id) {
             // Esconde todos os elementos de conteúdo
