@@ -80,3 +80,34 @@ nav a:hover {
 .program-list li {
     margin: 10px 0;
 }
+
+/* Estilo para alinhar o formulário à direita */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Estilo para a barra de pesquisa */
+.search-form {
+    display: flex;
+    align-items: center;
+}
+
+/* Estilo para o campo de pesquisa */
+.search-input {
+    padding: 5px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Estilo para o botão de envio da pesquisa */
+.search-button {
+    background-color: #26c776;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
