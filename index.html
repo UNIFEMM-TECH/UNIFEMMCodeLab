@@ -27,9 +27,9 @@
         <a href="#" onclick="mostrarConteudo('colaboradores')">Colaboradores</a>
         <a href="#" onclick="mostrarConteudo('sobre')">Sobre nós</a>
         <div class="search-form">
-            <form action="/resultados-de-pesquisa.html" method="get">
-                <input type="text" class="search-input" name="q" placeholder="Pesquisar...">
-                <input type="submit" class="search-button" value="Pesquisar">
+            <form action="#" method="get">
+                <input type="text" class="search-input" name="q" id="pesquisa" placeholder="Pesquisar...">
+                <button type="button" class="search-button" onclick="pesquisar()">Pesquisar</button>
             </form>            
         </div>
     </nav>
@@ -123,8 +123,9 @@
             <p>Estudante do curso de <a
                     href="https://www.unifemm.edu.br/analise-e-desenvolvimento-de-sistemas-ead/">Análise e
                     Desenvolvimento de Sistemas</a> pela UNIFEMM</p>
-            <p>Desenvolvedora do projeto: <a href="#" onclick="mostrarConteudo('Identificador de furos para sondagens de solo')">Identificador
-                de furos para sondagens de solo</a></p>
+            <p>Desenvolvedora do projeto: <a href="#"
+                    onclick="mostrarConteudo('Identificador de furos para sondagens de solo')">Identificador
+                    de furos para sondagens de solo</a></p>
         </section>
 
         <section id="sobre">
@@ -137,8 +138,8 @@
                 informática e da programação.</p>
         </section>
 
-        <section id="pesquisa" class="container">
-            <!-- Aqui serão exibidos os resultados da pesquisa -->
+        <section id="Pesquisar" class="container">
+            <ul id="resultadoPesquisa"></ul>
         </section>
 
     </div>
