@@ -111,3 +111,20 @@ nav {
     padding: 5px 10px;
     cursor: pointer;
 }
+
+/* Media query para dispositivos menores, como smartphones */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav a {
+        margin: 10px 0;
+    }
+}
