@@ -36,13 +36,13 @@ if (elemento) {
 // Obtém todas as seções existentes e adiciona suas IDs ao array secoesParaPesquisar
 function atualizarSecoesParaPesquisar() {
     var secoes = document.querySelectorAll('section');
-    secoesParaPesquisar = Array.from(secoes).map(function(secao) {
+    secoesParaPesquisar = Array.from(secoes).map(function (secao) {
         return secao.id;
     });
 }
 
 // Chama a função para atualizar o array quando o documento estiver pronto
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     atualizarSecoesParaPesquisar();
 });
 
@@ -50,25 +50,25 @@ document.addEventListener('DOMContentLoaded', function() {
 function pesquisar() {
     var termoPesquisa = document.getElementById('pesquisa').value.toLowerCase();
     var resultadoPesquisa = document.getElementById('resultadoPesquisa');
-    
+
     // Limpa o resultado da pesquisa anterior
     resultadoPesquisa.innerHTML = '';
 
     for (var i = 0; i < secoesParaPesquisar.length; i++) {
         var secaoId = secoesParaPesquisar[i];
         var secao = document.getElementById(secaoId);
-        
+
         // Verifica se o termo de pesquisa está presente no ID da seção
         if (secaoId.toLowerCase().includes(termoPesquisa)) {
             // Cria um link para a seção correspondente
             var link = document.createElement('a');
             link.textContent = secaoId;
             link.href = '#' + secaoId;
-            
+
             // Adiciona o link ao resultado da pesquisa
             resultadoPesquisa.appendChild(link);
             resultadoPesquisa.appendChild(document.createElement('br'));
-            
+
             // Exibe a seção
             secao.style.display = 'block';
         } else {
