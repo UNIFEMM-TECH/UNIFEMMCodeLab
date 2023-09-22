@@ -111,15 +111,3 @@ nav {
     padding: 5px 10px;
     cursor: pointer;
 }
-
-/* Estilos específicos para telas menores (dispositivos móveis) */
-@media (max-width: 767px) {
-    h1 {
-        font-size: 24px;
-    }
-
-    .search-input {
-        max-width: none;
-        width: 100%;
-    }
-}
