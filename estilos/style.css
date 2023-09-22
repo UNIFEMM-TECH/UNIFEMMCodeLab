@@ -111,3 +111,20 @@ nav {
     padding: 5px 10px;
     cursor: pointer;
 }
+
+/* Media query para dispositivos móveis */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 24px;
+    }
+
+    nav {
+        flex-direction: row;
+    }
+
+    nav a {
+        margin: 0;
+    }
+
+    /* Outros ajustes de estilo específicos para dispositivos móveis */
+}
