@@ -47,7 +47,9 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 // Função de pesquisa que utiliza o array secoesParaPesquisar
-function pesquisar() {
+function pesquisar(event) {
+    event.preventDefault(); // Impede o comportamento padrão de enviar o formulário
+
     var termoPesquisa = document.getElementById('pesquisa').value.toLowerCase();
     var resultadoPesquisa = document.getElementById('resultadoPesquisa');
 
