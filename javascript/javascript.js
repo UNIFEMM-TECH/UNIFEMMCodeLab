@@ -27,7 +27,7 @@ elementosConteudo.forEach(elemento => {
     elemento.style.display = 'none';
 });
 
-const elemento = document.getElementById('inicio');
+const elemento = document.getElementById('colaboradores');
 if (elemento) {
     elemento.style.display = 'block';
 }
