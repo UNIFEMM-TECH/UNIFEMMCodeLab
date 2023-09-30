@@ -145,7 +145,7 @@ nav {
     position: absolute;
     width: 150px;
     height: 100%;
-    background: linear-gradient(#fc0fc0, #fc0fc0);
+    background: linear-gradient(#fc0fc0, #EE786E);
     transition: width 0.4s;
     overflow: hidden;
     z-index: 2;
