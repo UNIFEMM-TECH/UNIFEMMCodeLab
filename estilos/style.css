@@ -130,18 +130,62 @@ nav {
     height: 180px;
     background-color: white;
     background: linear-gradient(#f8f8f8, white);
-    box-shadow: 0 8px 16px -8px rgba(0,0,0,0.4);
+    box-shadow: 0 8px 16px -8px rgba(0, 0, 0, 0.4);
     border-radius: 6px;
     overflow: hidden;
     position: relative;
     margin: 1.5rem;
-  }
-  
-  .card h3 {
+}
+
+.card h3 {
     text-align: center;
-  }
-  
-  .card .additional {
+}
+
+.card.diamond .additional {
+    position: absolute;
+    width: 150px;
+    height: 100%;
+    background-image: url('diamante.jpg');
+    /*caminho para imagem no diretorio CSS*/
+    transition: width 0.4s;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.card.gold .additional {
+    position: absolute;
+    width: 150px;
+    height: 100%;
+    background-image: url('ouro.jpg');
+    /*caminho para imagem no diretorio CSS*/
+    transition: width 0.4s;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.card.silver .additional {
+    position: absolute;
+    width: 150px;
+    height: 100%;
+    background-image: url('prata.jpg');
+    /*caminho para imagem no diretorio CSS*/
+    transition: width 0.4s;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.card.bronze .additional {
+    position: absolute;
+    width: 150px;
+    height: 100%;
+    background-image: url('bronze.jpg');
+    /*caminho para imagem no diretorio CSS*/
+    transition: width 0.4s;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.card.pink .additional {
     position: absolute;
     width: 150px;
     height: 100%;
@@ -149,125 +193,137 @@ nav {
     transition: width 0.4s;
     overflow: hidden;
     z-index: 2;
-  }
-  
-  .card.rainbow .additional {
+}
+
+.card.rainbow .additional {
+    position: absolute;
+    width: 150px;
+    height: 100%;
     animation: rainbow 5s linear infinite;
-  }
-    
-    @keyframes rainbow {
-        0% {
-            background: #FFC0CB;
-            /* Rosa claro */
-        }
-    
-        20% {
-            background: #FFD700;
-            /* Amarelo claro */
-        }
-    
-        40% {
-            background: #ADD8E6;
-            /* Azul claro */
-        }
-    
-        60% {
-            background: #98FB98;
-            /* Verde claro */
-        }
-    
-        80% {
-            background: #FFA07A;
-            /* Salmão claro */
-        }
-    
-        100% {
-            background: #FFB6C1;
-            /* Rosa claro */
-        }
+    transition: width 0.4s;
+    overflow: hidden;
+    z-index: 2;
+}
+
+@keyframes rainbow {
+    0% {
+        background: #FFC0CB;
+        /* Rosa claro */
     }
 
-  .card.green .additional {
+    20% {
+        background: #FFD700;
+        /* Amarelo claro */
+    }
+
+    40% {
+        background: #ADD8E6;
+        /* Azul claro */
+    }
+
+    60% {
+        background: #98FB98;
+        /* Verde claro */
+    }
+
+    80% {
+        background: #FFA07A;
+        /* Salmão claro */
+    }
+
+    100% {
+        background: #FFB6C1;
+        /* Rosa claro */
+    }
+}
+
+.card.green .additional {
+    position: absolute;
+    width: 150px;
+    height: 100%;
     background: linear-gradient(#92bCa6, #A2CCB6);
-  }
-  
-  
-  .card:hover .additional {
+    transition: width 0.4s;
+    overflow: hidden;
+    z-index: 2;
+}
+
+
+.card:hover .additional {
     width: 100%;
     border-radius: 0 5px 5px 0;
-  }
-  
-  .card .additional .user-card {
+}
+
+.card .additional .user-card {
     width: 150px;
     height: 100%;
     position: relative;
     float: left;
-  }
-  
-  .card .additional .user-card::after {
+}
+
+.card .additional .user-card::after {
     content: "";
     display: block;
     position: absolute;
     top: 10%;
     right: -2px;
     height: 80%;
-    border-left: 2px solid rgba(0,0,0,0.025);
-  }
-  
-  .card .additional .user-card .level,
-  .card .additional .user-card .points {
+    border-left: 2px solid rgba(0, 0, 0, 0.025);
+}
+
+.card .additional .user-card .level,
+.card .additional .user-card .points {
     text-align: center;
     top: 15%;
     color: black;
     text-transform: uppercase;
     font-size: 0.75em;
     font-weight: bold;
-    background: rgba(0,0,0,0.15);
+    background: rgba(0, 0, 0, 0.15);
     padding: 0.125rem 0.75rem;
     border-radius: 100px;
     white-space: nowrap;
-  }
-  
-  .card .additional .user-card .points {
+}
+
+.card .additional .user-card .points {
     top: 85%;
-  }
-  
-  .card .additional .user-card svg {
+}
+
+.card .additional .user-card svg {
     top: 50%;
-  }
-  
-  .card .additional .more-info {
+}
+
+.card .additional .more-info {
     width: 300px;
     float: left;
     position: absolute;
     left: 150px;
     height: 100%;
-  }
-  
-  .card .additional .more-info h1 {
+}
+
+.card .additional .more-info h1 {
     color: white;
     margin-bottom: 0;
-  }
-  
-  .card.green .additional .more-info h1 {
+}
+
+.card.green .additional .more-info h1 {
     color: #224C36;
-  }
-  
-  .card .additional .coords {
+}
+
+.card .additional .coords {
     margin: 0 1rem;
     color: black;
     font-size: 1rem;
-  }
-  
-  .card.green .additional .coords {
+}
+
+.card.green .additional .coords {
     color: #325C46;
-  }
-  
-  .card .additional .coords span + span {
+}
+
+.card .additional .coords span+span {
     float: right;
-  }
-  
-  .card .additional .stats {
+}
+
+.card .additional .stats {
     font-size: 2rem;
     display: flex;
     position: absolute;
@@ -276,38 +332,38 @@ nav {
     right: 1rem;
     top: auto;
     color: black;
-  }
-  
-  .card.green .additional .stats {
+}
+
+.card.green .additional .stats {
     color: #325C46;
-  }
-  
-  .card .additional .stats > div {
+}
+
+.card .additional .stats>div {
     flex: 1;
     text-align: center;
-  }
-  
-  .card .additional .stats i {
+}
+
+.card .additional .stats i {
     display: block;
-  }
-  
-  .card .additional .stats div.title {
+}
+
+.card .additional .stats div.title {
     font-size: 0.75rem;
     font-weight: bold;
     text-transform: uppercase;
-  }
-  
-  .card .additional .stats div.value {
+}
+
+.card .additional .stats div.value {
     font-size: 1.5rem;
     font-weight: bold;
     line-height: 1.5rem;
-  }
-  
-  .card .additional .stats div.value.infinity {
+}
+
+.card .additional .stats div.value.infinity {
     font-size: 2.5rem;
-  }
-  
-  .card .general {
+}
+
+.card .general {
     width: 300px;
     height: 100%;
     position: absolute;
@@ -317,14 +373,14 @@ nav {
     box-sizing: border-box;
     padding: 1rem;
     padding-top: 0;
-  }
-  
-  .card .general .more {
+}
+
+.card .general .more {
     position: absolute;
     bottom: 1rem;
     right: 1rem;
     font-size: 0.9em;
-  }
+}
 
 
 /* Media query para dispositivos menores, como smartphones */
@@ -342,4 +398,6 @@ nav {
     nav a {
         margin: 10px 0;
     }
+
+
 }
